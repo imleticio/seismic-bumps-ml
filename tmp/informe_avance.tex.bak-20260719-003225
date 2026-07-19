@@ -1,0 +1,271 @@
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage[a4paper,margin=2.5cm]{geometry}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,linkcolor=black,urlcolor=blue,pdftitle={Predicción de eventos sísmicos peligrosos en minería subterránea}}
+\title{Informe de avance\\[0.75em]Predicción de eventos sísmicos peligrosos en minería subterránea mediante técnicas de clasificación supervisada}
+\author{Martinez Mauricio Leonel\\DNI: 45.549.925}
+\date{2026}
+\begin{document}
+\maketitle
+
+\section{Introducción}
+La minería subterránea puede estar expuesta a eventos sísmicos de alta energía que representan un riesgo para la seguridad de los trabajadores, la infraestructura y la continuidad de las operaciones. Estos eventos pueden producir desprendimientos, daños materiales, interrupciones de la actividad y condiciones de trabajo que requieren una respuesta rápida. En este contexto, la disponibilidad de registros históricos de actividad sísmica y sismoacústica permite estudiar si los patrones observados durante un turno contienen información útil para anticipar el nivel de peligrosidad del turno siguiente.
+
+Este informe presenta el estado de avance de un estudio de clasificación supervisada aplicado al conjunto de datos \textit{Seismic-Bumps}. El problema se formula como una clasificación binaria: cada instancia se asigna a una clase no peligrosa o a una clase peligrosa. El análisis inicial se concentra en dos modelos base, un árbol de decisión y Naive Bayes, evaluados con el mismo procedimiento de validación. La comparación no se limita a la exactitud global, porque la clase peligrosa es minoritaria y, por lo tanto, un clasificador que favorezca sistemáticamente la clase mayoritaria puede presentar una exactitud elevada sin detectar una proporción suficiente de los eventos relevantes.
+
+El objetivo de esta etapa no es presentar todavía un modelo final para uso operativo, sino establecer una línea de base empírica, documentar el comportamiento de los primeros clasificadores y dejar identificados los aspectos que requieren profundización. En particular, se busca observar la relación entre rendimiento global, discriminación medida mediante AUC y capacidad de detección de la clase peligrosa. Esta lectura conjunta resulta necesaria para evitar conclusiones basadas en una única métrica.
+
+\section{Problema y pregunta de investigación}
+La tarea se formula como un problema de clasificación binaria sobre registros de actividad sísmica. La etiqueta \texttt{class} toma el valor 0 para un registro no peligroso y el valor 1 para un registro peligroso. El interés práctico se encuentra en la clase 1, ya que sus errores de omisión pueden tener un costo mayor que los errores asociados a la emisión de una alerta innecesaria.
+
+El problema central consiste en determinar si los 18 atributos predictivos disponibles permiten distinguir de manera útil ambas clases y, en caso afirmativo, qué comportamiento presentan diferentes algoritmos de clasificación. La dificultad principal surge de la distribución desigual de la variable objetivo: la clase 0 reúne la gran mayoría de los registros, mientras que la clase 1 representa una proporción reducida. En consecuencia, la exactitud debe interpretarse junto con la matriz de confusión y con métricas específicas de la clase positiva.
+
+La pregunta de investigación que orienta el trabajo es:
+\begin{quote}
+¿Qué diferencias presentan un árbol de decisión base y Naive Bayes base en términos de rendimiento global y detección de la clase peligrosa en el conjunto Seismic-Bumps?
+\end{quote}
+Esta formulación delimita el alcance de la presente versión. La comparación preliminar se refiere exclusivamente a los dos modelos base disponibles en esta etapa; la incorporación de k-NN y regresión logística queda pendiente para una fase posterior.
+
+\section{Objetivos}
+El objetivo general es analizar comparativamente el comportamiento de un árbol de decisión base y de Naive Bayes base para clasificar la ocurrencia de eventos sísmicos peligrosos en el conjunto Seismic-Bumps.
+
+Los objetivos específicos son:
+\begin{itemize}
+\item describir el tamaño, la estructura y la distribución de clases del conjunto de datos;
+\item establecer un procedimiento reproducible de evaluación mediante validación cruzada estratificada;
+\item documentar los resultados obtenidos en Altair AI Studio para cada modelo base;
+\item analizar las matrices de confusión con filas verdaderas y columnas predichas;
+\item comparar exactitud, AUC, precisión, recall y F1 de la clase peligrosa;
+\item interpretar las diferencias entre rendimiento global y capacidad de detección de la clase minoritaria; y
+\item dejar preparado el análisis posterior de k-NN y de regresión logística.
+\end{itemize}
+
+\section{Descripción del conjunto de datos}
+Se utilizó el conjunto \textit{Seismic-Bumps}, disponible en el repositorio público UCI Machine Learning Repository. El archivo local utilizado en el flujo de trabajo es \texttt{seismic-\allowbreak bumps.arff}. El conjunto contiene 2584 instancias y 19 atributos en total: 18 atributos predictivos y una variable objetivo denominada \texttt{class}. En la inspección realizada no se detectaron valores faltantes.
+
+\begin{table}[H]
+\centering
+\caption{Características generales del conjunto de datos.}
+\label{tab:dataset-general}
+\begin{tabular}{ll}
+\toprule
+\textbf{Característica} & \textbf{Descripción} \\
+\midrule
+Nombre & Seismic-Bumps \\
+Instancias & 2584 \\
+Atributos totales & 19 \\
+Atributos predictivos & 18 \\
+Variable objetivo & \texttt{class} \\
+Formato & ARFF \\
+Valores faltantes & No detectados \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La distribución de la variable objetivo muestra un desbalance marcado. La clase 0 contiene 2414 instancias, equivalentes al 93,42\% del conjunto, mientras que la clase 1 contiene 170 instancias, equivalentes al 6,58\%. Esta diferencia debe ser tenida en cuenta en la interpretación: un modelo puede acertar una gran cantidad de registros de la clase 0 y, al mismo tiempo, omitir la mayoría de los casos de la clase 1.
+
+\subsection{Tratamiento del desbalance}
+La distribución observada equivale aproximadamente a una relación de 14,2 registros de la clase 0 por cada registro de la clase 1. En este contexto, la exactitud puede resultar engañosa: un clasificador que predijera casi siempre la clase mayoritaria podría alcanzar una proporción elevada de aciertos y, sin embargo, detectar muy pocos eventos peligrosos. Por ello, la evaluación deberá considerar especialmente la capacidad de identificar la clase 1, junto con el costo asociado a los falsos positivos y falsos negativos.
+
+Como estrategia experimental se prevé evaluar el uso de SMOTE (Synthetic Minority Over-sampling Technique), propuesto por Chawla et al. (2002). SMOTE genera ejemplos sintéticos de la clase minoritaria a partir de la combinación de observaciones existentes y sus vecinos cercanos; por lo tanto, los nuevos registros no son observaciones reales del conjunto original, sino construcciones artificiales destinadas a mejorar la representación de la clase 1 durante el entrenamiento. A diferencia del submuestreo, que reduce la cantidad de observaciones de la clase mayoritaria y puede descartar información, SMOTE conserva esas observaciones. También se diferencia del oversampling aleatorio, que replica registros minoritarios existentes, mientras que SMOTE busca generar nuevas muestras sintéticas.
+
+La aplicación prevista de SMOTE se limitará exclusivamente al subproceso de entrenamiento de cada partición de la validación cruzada. De este modo, los ejemplos sintéticos se generarán únicamente a partir de los datos utilizados para entrenar en cada partición, evitando que información del conjunto de prueba influya en el ajuste del modelo. El conjunto de prueba conservará la distribución original del conjunto, sin aplicar SMOTE, para que la evaluación represente la frecuencia de clases observada en los datos. En una etapa posterior se comparará el modelo base con el mismo modelo entrenado con SMOTE, manteniendo el procedimiento de evaluación y las métricas para analizar el efecto de la estrategia.
+
+El uso de SMOTE también introduce riesgos metodológicos que deberán ser examinados. Los ejemplos sintéticos pueden amplificar ruido, generar observaciones en regiones de solapamiento entre clases o favorecer un aumento de falsos positivos. Por esta razón, SMOTE se incorporará como una alternativa experimental y no como una mejora asumida de antemano; sus resultados deberán interpretarse conjuntamente con la matriz de confusión, el recall, la precisión, el F1 y el AUC.
+
+\begin{table}[H]
+\centering
+\caption{Distribución de la variable objetivo.}
+\label{tab:class-distribution}
+\begin{tabular}{lrr}
+\toprule
+\textbf{Clase} & \textbf{Cantidad} & \textbf{Proporción} \\
+\midrule
+No peligrosa (0) & 2414 & 93,42\% \\
+Peligrosa (1) & 170 & 6,58\% \\
+\midrule
+Total & 2584 & 100,00\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.78\textwidth]{output/figures/distribucion_clases.pdf}
+\caption{Distribución de las clases del conjunto Seismic-Bumps.}
+\label{fig:class-distribution}
+\end{figure}
+
+Los atributos describen condiciones y mediciones asociadas con la actividad registrada durante los turnos. La variable objetivo resume la ocurrencia de un evento clasificado como peligroso. En esta etapa, el conjunto se utiliza como fuente de observaciones históricas para comparar algoritmos; no se afirma todavía que la relación observada sea suficiente para una implementación de alerta en tiempo real.
+
+\section{Plan de análisis}
+El plan de análisis se organiza en cuatro etapas. Primero, se verifica la estructura del archivo ARFF, el número de instancias, la cantidad de atributos, la ausencia de valores faltantes y la distribución de la clase objetivo. Segundo, se configuran los modelos base en Altair AI Studio con los mismos datos y el mismo esquema de evaluación. Tercero, se examinan las matrices de confusión y las métricas globales y de clase. Finalmente, se realiza una interpretación conjunta que distingue la exactitud de la capacidad efectiva para detectar la clase peligrosa.
+
+Todos los resultados empíricos presentados fueron obtenidos mediante Altair AI Studio utilizando validación cruzada estratificada de 10 particiones. La estratificación busca conservar, dentro de cada partición, una representación comparable de las dos clases. De esta forma, las métricas reportadas reflejan el comportamiento promedio del procedimiento sobre diferentes particiones y no el desempeño en una única división arbitraria del conjunto.
+
+Las matrices se expresan con filas verdaderas y columnas predichas. En esta convención, para la clase 1 se definen los verdaderos positivos como los registros peligrosos correctamente identificados, los falsos negativos como los registros peligrosos clasificados como no peligrosos y los falsos positivos como los registros no peligrosos clasificados como peligrosos. Las métricas agregadas se calculan a partir de la matriz total:
+\[
+\mathrm{precision}=\frac{TP}{TP+FP},\qquad
+\mathrm{recall}=\frac{TP}{TP+FN},
+\]
+\[
+\mathrm{F1}=\frac{2\cdot\mathrm{precision}\cdot\mathrm{recall}}
+{\mathrm{precision}+\mathrm{recall}}.
+\]
+Además de los valores agregados, se consignan cuando están disponibles los valores del encabezado de AI Studio y su variabilidad entre particiones. Esta distinción es importante: los promedios informados por la herramienta y los cocientes calculados a partir de la matriz acumulada no necesariamente coinciden exactamente, porque se obtienen mediante operaciones diferentes.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.88\textwidth]{output/figures/proceso_ai_studio.png}
+\caption{Esquema del proceso de trabajo utilizado para obtener los resultados mediante Altair AI Studio.}
+\label{fig:ai-studio-process}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.88\textwidth]{output/figures/proceso_cross_validation.png}
+\caption{Esquema de la validación cruzada estratificada utilizada en la evaluación.}
+\label{fig:cross-validation-process}
+\end{figure}
+
+\section{Estado del avance}
+En el estado actual se completaron la carga e inspección del conjunto de datos, la descripción de la variable objetivo, la configuración del flujo de evaluación y la obtención de los primeros resultados empíricos para los dos modelos base. También se generaron representaciones de la distribución de clases, del proceso de evaluación, de los errores de la clase positiva y de las matrices de confusión.
+
+El avance debe considerarse preliminar. Las métricas disponibles corresponden al procedimiento de validación cruzada informado por AI Studio y permiten establecer una primera comparación, pero no constituyen todavía una validación temporal ni una evaluación externa en condiciones operativas. Asimismo, la observación de un AUC o de una exactitud determinada no permite por sí sola decidir si un modelo es adecuado para una política de alertas: esa decisión debería incorporar costos diferenciados para falsos negativos y falsos positivos.
+
+Quedan pendientes la ejecución y el análisis de k-NN y de regresión logística, la comparación completa de los cuatro algoritmos planificados, el estudio de sensibilidad a los parámetros de los modelos y una evaluación más cercana al uso operativo. La versión actual conserva, por lo tanto, el carácter de informe de avance y no presenta una conclusión definitiva sobre el clasificador final.
+
+\section{Primer resultado empírico (Decision Tree base)}
+El árbol de decisión base obtuvo una exactitud de 92,84\% $\pm$ 0,27\% y un AUC de 0,860 $\pm$ 0,041, según los resultados de AI Studio. La exactitud es elevada en relación con la proporción de la clase mayoritaria y el AUC indica una capacidad de discriminación preliminar superior a la de Naive Bayes base en esta ejecución.
+
+La matriz total, con filas verdaderas y columnas predichas, fue:
+\begin{table}[H]
+\centering
+\caption{Matriz de confusión del Decision Tree base.}
+\label{tab:dt-base-matrix}
+\begin{tabular}{lrr}
+\toprule
+& \textbf{Predicha 0} & \textbf{Predicha 1} \\
+\midrule
+\textbf{Verdadera 0} & 2394 & 20 \\
+\textbf{Verdadera 1} & 165 & 5 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+La matriz permite distinguir el origen de la exactitud. El modelo clasifica correctamente 2394 registros de la clase 0, pero solo identifica 5 de los 170 registros de la clase 1. En consecuencia, produce 20 falsos positivos y 165 falsos negativos. La proporción de falsos negativos entre los casos peligrosos es, por tanto, muy alta.
+
+A partir de la matriz total, la precisión de la clase 1 es 20,00\%, el recall agregado es 2,94\% y el F1 agregado es 5,13\%. El encabezado de AI Studio informa para el recall un valor de 3,05\% $\pm$ 4,36\%. La diferencia entre 3,05\% y 2,94\% se explica por la diferencia entre el promedio de los resultados por partición y el cálculo realizado sobre los conteos acumulados.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{output/figures/errores_clase_positiva.pdf}
+\caption{Errores de clasificación de la clase peligrosa para el Decision Tree base, obtenidos mediante AI Studio.}
+\label{fig:dt-errors}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{output/figures/matriz_confusion_dt_base.pdf}
+\caption{Matriz de confusión del Decision Tree base, con filas verdaderas y columnas predichas.}
+\label{fig:dt-matrix}
+\end{figure}
+
+El resultado muestra que una exactitud cercana al 93\% puede coexistir con una cobertura muy baja de la clase peligrosa. En este caso, la métrica global resume principalmente el comportamiento sobre la clase 0, que constituye el 93,42\% de las instancias. Por eso, el análisis del árbol base debe centrarse menos en su exactitud aislada y más en el costo potencial de omitir casos de la clase 1.
+
+\section{Segundo resultado empírico: Naive Bayes base}
+Naive Bayes base obtuvo una exactitud de 84,75\% $\pm$ 4,31\% y un AUC de 0,761 $\pm$ 0,043, según AI Studio. Su exactitud es inferior a la del árbol de decisión base y también presenta una variabilidad mayor en la exactitud entre particiones. En cambio, la matriz muestra una detección considerablemente mayor de los casos de la clase 1.
+
+La matriz total fue:
+\begin{table}[H]
+\centering
+\caption{Matriz de confusión de Naive Bayes base.}
+\label{tab:nb-base-matrix}
+\begin{tabular}{lrr}
+\toprule
+& \textbf{Predicha 0} & \textbf{Predicha 1} \\
+\midrule
+\textbf{Verdadera 0} & 2120 & 294 \\
+\textbf{Verdadera 1} & 100 & 70 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Naive Bayes identifica correctamente 70 de los 170 registros peligrosos. Para lograrlo, clasifica como positivos 364 registros en total: 70 son verdaderos positivos y 294 son falsos positivos. El modelo también produce 100 falsos negativos, una cantidad inferior a la del árbol base, aunque no logra detectar todos los casos peligrosos.
+
+Las métricas agregadas calculadas a partir de la matriz son precisión 19,23\%, recall 41,18\% y F1 26,22\%. El encabezado de AI Studio informa una precisión de 20,24\% $\pm$ 4,89\%, un recall de 41,20\% $\pm$ 6,84\% y un F1 de 26,80\% $\pm$ 5,24\%. Al igual que en el caso anterior, los valores agregados y los promedios del encabezado deben leerse como resúmenes complementarios del mismo procedimiento de validación.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.82\textwidth]{output/figures/errores_clase_positiva_naive_bayes.pdf}
+\caption{Errores de clasificación de la clase peligrosa para Naive Bayes base, obtenidos mediante AI Studio.}
+\label{fig:nb-errors}
+\end{figure}
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.70\textwidth]{output/figures/matriz_confusion_nb_base.pdf}
+\caption{Matriz de confusión de Naive Bayes base, con filas verdaderas y columnas predichas.}
+\label{fig:nb-matrix}
+\end{figure}
+
+El comportamiento de Naive Bayes evidencia el intercambio entre detección y falsas alarmas. Frente al árbol base, aumenta sustancialmente la cantidad de casos peligrosos detectados, pero también asigna la clase positiva a muchos registros que pertenecen a la clase 0. Por lo tanto, su menor exactitud no implica necesariamente un resultado menos útil si el objetivo prioritario es reducir la omisión de eventos peligrosos.
+
+\section{Comparación preliminar de modelos}
+La Tabla~\ref{tab:base-model-comparison} resume la comparación entre el Decision Tree base y Naive Bayes base. Las métricas de precisión, recall y F1 son agregadas y se calculan a partir de las matrices de confusión totales. No se las denomina métricas micro estándar: en este informe se utiliza "agregada" para indicar que cada valor se obtiene aplicando la fórmula a los conteos acumulados de la clase 1.
+
+\begin{table}[H]
+\centering
+\caption{Comparación preliminar de los dos modelos base.}
+\label{tab:base-model-comparison}
+\small
+\begin{tabular}{@{}lcc@{}}
+\toprule
+\textbf{Métrica} & \textbf{Decision Tree base} & \textbf{Naive Bayes base} \\
+\midrule
+Exactitud & 92,84\% $\pm$ 0,27\% & 84,75\% $\pm$ 4,31\% \\
+AUC & 0,860 $\pm$ 0,041 & 0,761 $\pm$ 0,043 \\
+Precisión agregada clase 1 & 20,00\% & 19,23\% \\
+Recall agregado clase 1 & 2,94\% & 41,18\% \\
+F1 agregado clase 1 & 5,13\% & 26,22\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+El árbol de decisión base supera a Naive Bayes base en exactitud y AUC. Sin embargo, la diferencia en precisión agregada es pequeña, mientras que el recall y el F1 favorecen claramente a Naive Bayes. Esta combinación muestra que los modelos priorizan comportamientos distintos: el árbol conserva mejor la clasificación global, mientras que Naive Bayes recupera una proporción mayor de la clase peligrosa.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.90\textwidth]{output/figures/comparacion_modelos.pdf}
+\caption{Comparación de exactitud y AUC para el Decision Tree base y Naive Bayes base, con la variabilidad reportada por AI Studio.}
+\label{fig:model-comparison}
+\end{figure}
+
+La comparación debe interpretarse en el contexto de las 170 instancias peligrosas. En el árbol de decisión, 165 de esos casos quedan clasificados como clase 0. En Naive Bayes, la cantidad de falsos negativos disminuye a 100, pero aparecen 294 falsos positivos. Esto significa que una eventual selección operativa no puede resolverse ordenando los modelos solo por exactitud o solo por AUC; es necesario explicitar el costo relativo de cada tipo de error.
+
+\section{Interpretación conjunta de los resultados empíricos}
+Los dos resultados empíricos permiten formular una primera interpretación sobre el efecto del desbalance en la evaluación. El Decision Tree base obtiene 92,84\% de exactitud, valor cercano a la proporción de la clase mayoritaria, pero su recall agregado de la clase 1 es 2,94\%. El resultado es consistente con un modelo que clasifica correctamente muchos registros no peligrosos y que, al mismo tiempo, deja sin detectar la mayor parte de los casos peligrosos.
+
+Naive Bayes base presenta un comportamiento diferente. Su exactitud de 84,75\% es menor, pero su recall agregado alcanza 41,18\% y su F1 agregado 26,22\%, frente a 5,13\% del árbol. La mejora en detección se obtiene a costa de 294 falsos positivos. En un escenario donde una alarma adicional es aceptable frente a la omisión de un evento, este intercambio podría ser preferible; en un escenario donde las falsas alarmas generan interrupciones costosas, la decisión podría ser distinta.
+
+El AUC también debe leerse con cautela. El valor 0,860 del árbol base es superior al 0,761 de Naive Bayes y resume una diferencia de discriminación en las condiciones de evaluación utilizadas. No obstante, el AUC no fija por sí mismo un umbral operativo ni representa directamente la cantidad de falsos negativos que se aceptaría en producción. La matriz de confusión y las métricas de la clase 1 siguen siendo indispensables para analizar el comportamiento en el punto de decisión utilizado.
+
+Por estas razones, los resultados no permiten afirmar todavía que un único modelo sea definitivamente mejor. Si el criterio principal es la exactitud global y la discriminación promedio, el árbol base es favorable. Si el criterio principal es detectar una mayor proporción de eventos peligrosos, Naive Bayes base es más adecuado entre los dos modelos analizados, aun con más falsas alarmas. La elección final requiere una función de costos específica del contexto minero, una revisión de umbrales y una evaluación con datos que respeten la dimensión temporal de la operación.
+
+El análisis queda abierto a la incorporación de k-NN y regresión logística. Esos modelos permitirán verificar si el patrón observado se mantiene al ampliar la familia de algoritmos y si existe alguna alternativa que alcance un balance más favorable entre exactitud, discriminación y detección de la clase minoritaria. También será necesario revisar la estabilidad de las métricas y evaluar si los resultados se conservan cuando la validación reproduce una separación temporal más cercana al uso real.
+
+\section{Fuente inicial}
+Sikora, M., y Wrobel, L. (2010). \textit{Seismic-Bumps}. UCI Machine Learning Repository.\\
+\url{https://archive.ics.uci.edu/dataset/266/seismic+bumps}\\
+Chawla, N. V., Bowyer, K. W., Hall, L. O., \& Kegelmeyer, W. P. (2002). \textit{SMOTE: Synthetic Minority Over-sampling Technique}. Journal of Artificial Intelligence Research, 16, 321--357. URL: \url{https://doi.org/10.1613/jair.953}
+\end{document}

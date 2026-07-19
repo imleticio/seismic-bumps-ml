@@ -1,0 +1,22 @@
+Title:           Predicción de eventos sísmicos peligrosos en minería subterránea
+Subject:         
+Keywords:        
+Author:          
+Creator:         LaTeX with hyperref
+Producer:        pdfTeX-1.40.29
+CreationDate:    Sat Jul 18 22:57:01 2026 -03
+ModDate:         Sat Jul 18 22:57:01 2026 -03
+Custom Metadata: yes
+Metadata Stream: no
+Tagged:          no
+UserProperties:  no
+Suspects:        no
+Form:            none
+JavaScript:      no
+Pages:           10
+Encrypted:       no
+Page size:       595.276 x 841.89 pts (A4)
+Page rot:        0
+File size:       385816 bytes
+Optimized:       no
+PDF version:     1.7

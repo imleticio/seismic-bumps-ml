@@ -1,6 +1,7 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.16)  19 JUL 2026 03:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (TeX Live 2026) (preloaded format=pdflatex 2026.7.16)  22 JUL 2026 12:44
 entering extended mode
  restricted \write18 enabled.
+ file:line:error style messages enabled.
  %&-line parsing enabled.
 **informe_avance.tex
 (./informe_avance.tex
@@ -408,7 +409,7 @@ File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ef
 File: l3backend-pdftex.def 2025-10-09 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count319
-) (output/pdf/informe_avance.aux
+) (/Users/leonel/Desktop/TAD/output/pdf/informe_avance.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
@@ -505,7 +506,8 @@ Package color Info: Driver file: pdftex.def on input line 149.
 (/usr/local/texlive/2026basic/texmf-dist/tex/latex/graphics/mathcolor.ltx))
 Package hyperref Info: Link coloring ON on input line 18.
 
-(output/pdf/informe_avance.out) (output/pdf/informe_avance.out)
+(/Users/leonel/Desktop/TAD/output/pdf/informe_avance.out)
+(/Users/leonel/Desktop/TAD/output/pdf/informe_avance.out)
 \@outlinefile=\write3
 \openout3 = `informe_avance.out'.
 
@@ -556,91 +558,113 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <6> on input line 37.
  [2{/usr/local/texlive/2026basic/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/
 usr/local/texlive/2026basic/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] [3]
-<output/figures/distribucion_clases.pdf, id=89, 441.19337pt x 226.00497pt>
+<output/figures/distribucion_clases.pdf, id=101, 441.19337pt x 226.00497pt>
 File: output/figures/distribucion_clases.pdf Graphic file (type pdf)
 <use output/figures/distribucion_clases.pdf>
 Package pdftex.def Info: output/figures/distribucion_clases.pdf  used on input 
-line 105.
+line 107.
 (pdftex.def)             Requested size: 355.08984pt x 181.8974pt.
  [4 <./output/figures/distribucion_clases.pdf>]
-<output/figures/proceso_ai_studio_clean.pdf, id=104, 722.7pt x 202.356pt>
-File: output/figures/proceso_ai_studio_clean.pdf Graphic file (type pdf)
-<use output/figures/proceso_ai_studio_clean.pdf>
-Package pdftex.def Info: output/figures/proceso_ai_studio_clean.pdf  used on in
-put line 130.
-(pdftex.def)             Requested size: 400.61703pt x 112.17303pt.
-<output/figures/proceso_cross_validation_clean.pdf, id=105, 722.7pt x 238.49101
+<output/figures/proceso_ai_studio_user.png, id=116, 666.49pt x 354.32375pt>
+File: output/figures/proceso_ai_studio_user.png Graphic file (type png)
+<use output/figures/proceso_ai_studio_user.png>
+Package pdftex.def Info: output/figures/proceso_ai_studio_user.png  used on inp
+ut line 132.
+(pdftex.def)             Requested size: 400.61703pt x 212.97975pt.
+<output/figures/proceso_cross_validation_clean.pdf, id=118, 722.7pt x 238.49101
 pt>
 File: output/figures/proceso_cross_validation_clean.pdf Graphic file (type pdf)
 
 <use output/figures/proceso_cross_validation_clean.pdf>
 Package pdftex.def Info: output/figures/proceso_cross_validation_clean.pdf  use
-d on input line 137.
+d on input line 139.
 (pdftex.def)             Requested size: 400.61703pt x 132.20395pt.
  [5{/usr/local/texlive/2026basic/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc} <
-./output/figures/proceso_ai_studio_clean.pdf> <./output/figures/proceso_cross_v
-alidation_clean.pdf>]
-<output/figures/knn_normalize_group_models.png, id=151, 747.79375pt x 318.18875
+./output/figures/proceso_ai_studio_user.png>]
+<output/figures/knn_normalize_group_models.png, id=127, 747.79375pt x 318.18875
 pt>
 File: output/figures/knn_normalize_group_models.png Graphic file (type png)
 <use output/figures/knn_normalize_group_models.png>
 Package pdftex.def Info: output/figures/knn_normalize_group_models.png  used on
- input line 151.
+ input line 153.
 (pdftex.def)             Requested size: 446.13727pt x 189.832pt.
- [6 <./output/figures/knn_normalize_group_models.png>]
-<output/figures/logistic_regression_cross_validation_clean.pdf, id=160, 796.677
-37pt x 284.52798pt>
-File: output/figures/logistic_regression_cross_validation_clean.pdf Graphic fil
-e (type pdf)
-<use output/figures/logistic_regression_cross_validation_clean.pdf>
-Package pdftex.def Info: output/figures/logistic_regression_cross_validation_cl
-ean.pdf  used on input line 165.
-(pdftex.def)             Requested size: 446.13727pt x 159.33458pt.
- [7 <./output/figures/logistic_regression_cross_validation_clean.pdf>]
-<output/figures/errores_clase_positiva.pdf, id=205, 448.91402pt x 210.48672pt>
+ [6 <./output/figures/proceso_cross_validation_clean.pdf>]
+<output/figures/logistic_regression_cross_validation_user.png, id=157, 668.4975
+pt x 292.09125pt>
+File: output/figures/logistic_regression_cross_validation_user.png Graphic file
+ (type png)
+<use output/figures/logistic_regression_cross_validation_user.png>
+Package pdftex.def Info: output/figures/logistic_regression_cross_validation_us
+er.png  used on input line 167.
+(pdftex.def)             Requested size: 446.13727pt x 194.93796pt.
+ [7 <./output/figures/knn_normalize_group_models.png>] [8 <./output/figures/log
+istic_regression_cross_validation_user.png>]
+<output/figures/errores_clase_positiva.pdf, id=171, 448.91402pt x 210.48672pt>
 File: output/figures/errores_clase_positiva.pdf Graphic file (type pdf)
 <use output/figures/errores_clase_positiva.pdf>
 Package pdftex.def Info: output/figures/errores_clase_positiva.pdf  used on inp
-ut line 201.
+ut line 203.
 (pdftex.def)             Requested size: 373.3035pt x 175.03473pt.
-<output/figures/matriz_confusion_dt_base.pdf, id=206, 362.60396pt x 289.1839pt>
+<output/figures/matriz_confusion_dt_base.pdf, id=172, 362.60396pt x 289.1839pt>
 
 File: output/figures/matriz_confusion_dt_base.pdf Graphic file (type pdf)
 <use output/figures/matriz_confusion_dt_base.pdf>
 Package pdftex.def Info: output/figures/matriz_confusion_dt_base.pdf  used on i
-nput line 208.
+nput line 210.
 (pdftex.def)             Requested size: 318.66948pt x 254.15166pt.
- [8 <./output/figures/errores_clase_positiva.pdf>] [9 <./output/figures/matriz_
-confusion_dt_base.pdf>]
-<output/figures/errores_clase_positiva_naive_bayes.pdf, id=246, 515.08934pt x 2
+ [9 <./output/figures/errores_clase_positiva.pdf>] [10 <./output/figures/matriz
+_confusion_dt_base.pdf>]
+<output/figures/errores_clase_positiva_naive_bayes.pdf, id=212, 515.08934pt x 2
 62.67094pt>
 File: output/figures/errores_clase_positiva_naive_bayes.pdf Graphic file (type 
 pdf)
 <use output/figures/errores_clase_positiva_naive_bayes.pdf>
 Package pdftex.def Info: output/figures/errores_clase_positiva_naive_bayes.pdf 
- used on input line 239.
+ used on input line 241.
 (pdftex.def)             Requested size: 373.3035pt x 190.37343pt.
-<output/figures/matriz_confusion_nb_base.pdf, id=247, 364.12161pt x 289.21779pt
+<output/figures/matriz_confusion_nb_base.pdf, id=213, 364.12161pt x 289.21779pt
 >
 File: output/figures/matriz_confusion_nb_base.pdf Graphic file (type pdf)
 <use output/figures/matriz_confusion_nb_base.pdf>
 Package pdftex.def Info: output/figures/matriz_confusion_nb_base.pdf  used on i
-nput line 246.
+nput line 248.
 (pdftex.def)             Requested size: 318.66948pt x 253.13113pt.
- [10 <./output/figures/errores_clase_positiva_naive_bayes.pdf> <./output/figure
+ [11 <./output/figures/errores_clase_positiva_naive_bayes.pdf> <./output/figure
 s/matriz_confusion_nb_base.pdf>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 261.
- [11]
-<output/figures/comparison_class1_metrics.pdf, id=293, 512.23215pt x 270.82536p
+(Font)              <10.95> on input line 263.
+ [12]
+<output/figures/decision_tree_smote.png, id=261, 908.39375pt x 310.15875pt>
+File: output/figures/decision_tree_smote.png Graphic file (type png)
+<use output/figures/decision_tree_smote.png>
+Package pdftex.def Info: output/figures/decision_tree_smote.png  used on input 
+line 323.
+(pdftex.def)             Requested size: 446.13727pt x 152.32933pt.
+<output/figures/knn_smote_k5.png, id=262, 946.53625pt x 332.24126pt>
+File: output/figures/knn_smote_k5.png Graphic file (type png)
+<use output/figures/knn_smote_k5.png>
+Package pdftex.def Info: output/figures/knn_smote_k5.png  used on input line 33
+0.
+(pdftex.def)             Requested size: 446.13727pt x 156.59445pt.
+ [13 <./output/figures/decision_tree_smote.png>]
+<output/figures/logistic_regression_smote.png, id=273, 898.35625pt x 269.005pt>
+
+File: output/figures/logistic_regression_smote.png Graphic file (type png)
+<use output/figures/logistic_regression_smote.png>
+Package pdftex.def Info: output/figures/logistic_regression_smote.png  used on 
+input line 337.
+(pdftex.def)             Requested size: 446.13727pt x 133.59093pt.
+ [14 <./output/figures/knn_smote_k5.png> <./output/figures/logistic_regression_
+smote.png>]
+<output/figures/comparison_class1_metrics.pdf, id=284, 512.23215pt x 270.82536p
 t>
 File: output/figures/comparison_class1_metrics.pdf Graphic file (type pdf)
 <use output/figures/comparison_class1_metrics.pdf>
 Package pdftex.def Info: output/figures/comparison_class1_metrics.pdf  used on 
-input line 337.
+input line 395.
 (pdftex.def)             Requested size: 437.0374pt x 231.07045pt.
- [12] [13 <./output/figures/comparison_class1_metrics.pdf>] [14]
-(output/pdf/informe_avance.aux
+ [15] [16 <./output/figures/comparison_class1_metrics.pdf>] [17]
+(/Users/leonel/Desktop/TAD/output/pdf/informe_avance.aux
 LaTeX Info: Redefining \. on input line 11.
 LaTeX Info: Redefining \% on input line 11.
 )
@@ -649,35 +673,31 @@ LaTeX2e <2025-11-01>
 L3 programming layer <2026-01-19>
  ***********
 Package rerunfilecheck Info: File `informe_avance.out' has not changed.
-(rerunfilecheck)             Checksum: 9FFAB11D8AADF213CA4A8EEAFC5A5D59;3532.
+(rerunfilecheck)             Checksum: 718B879BEDBAD529BDBC53DC8CF7CF73;4191.
  ) 
 Here is how much of TeX's memory you used:
- 11940 strings out of 469006
- 189582 string characters out of 5454813
- 619739 words of memory out of 5000000
- 40420 multiletter control sequences out of 15000+600000
+ 11978 strings out of 469006
+ 190987 string characters out of 5454813
+ 621235 words of memory out of 5000000
+ 40448 multiletter control sequences out of 15000+600000
  685814 words of font info for 75 fonts, out of 8000000 for 9000
  319 hyphenation exceptions out of 8191
- 75i,13n,79p,977b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,13n,79p,1028b,476s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></u
 sr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></usr/lo
-cal/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></usr/local/te
-xlive/2026basic/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/texlive
-/2026basic/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texlive/2026
-basic/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2026basic/
-texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2026basic/texmf-
-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2026basic/texmf-dist/f
-onts/type1/public/lm/lmr9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/ty
-pe1/public/lm/lmri12.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/p
-ublic/lm/lmss9.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/
-lm/lmssbx10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/
-lmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmsy9
-.pfb></usr/local/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmtt12.pfb>
-
-Output written on output/pdf/informe_avance.pdf (14 pages, 544772 bytes).
+cal/texlive/2026basic/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></usr/local/t
+exlive/2026basic/texmf-dist/fonts/type1/public/lm/lmmi12.pfb></usr/local/texliv
+e/2026basic/texmf-dist/fonts/type1/public/lm/lmr10.pfb></usr/local/texlive/2026
+basic/texmf-dist/fonts/type1/public/lm/lmr12.pfb></usr/local/texlive/2026basic/
+texmf-dist/fonts/type1/public/lm/lmr17.pfb></usr/local/texlive/2026basic/texmf-
+dist/fonts/type1/public/lm/lmri12.pfb></usr/local/texlive/2026basic/texmf-dist/
+fonts/type1/public/lm/lmsy10.pfb></usr/local/texlive/2026basic/texmf-dist/fonts
+/type1/public/lm/lmtt12.pfb>
+Output written on /Users/leonel/Desktop/TAD/output/pdf/informe_avance.pdf (17 p
+ages, 718688 bytes).
 PDF statistics:
- 432 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
- 49 named destinations out of 1000 (max. 500000)
- 179 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 417 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 59 named destinations out of 1000 (max. 500000)
+ 218 words of extra memory for PDF output out of 10000 (max. 10000000)
 

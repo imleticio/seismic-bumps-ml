@@ -37,33 +37,32 @@
         <parameter key="local_random_seed" value="1992"/>
         <parameter key="enable_parallel_execution" value="true"/>
         <process expanded="true">
-          <operator activated="true" class="h2o:generalized_linear_model" compatibility="11.0.002" expanded="true" height="124" name="Generalized Linear Model" width="90" x="179" y="85">
-            <parameter key="family" value="binomial"/>
-            <parameter key="link" value="family_default"/>
-            <parameter key="solver" value="AUTO"/>
-            <parameter key="reproducible" value="true"/>
-            <parameter key="maximum_number_of_threads" value="4"/>
-            <parameter key="use_regularization" value="false"/>
-            <parameter key="lambda_search" value="false"/>
-            <parameter key="number_of_lambdas" value="0"/>
-            <parameter key="lambda_min_ratio" value="0.0"/>
-            <parameter key="early_stopping" value="true"/>
-            <parameter key="stopping_rounds" value="3"/>
-            <parameter key="stopping_tolerance" value="0.001"/>
-            <parameter key="standardize" value="true"/>
-            <parameter key="non-negative_coefficients" value="false"/>
-            <parameter key="add_intercept" value="true"/>
-            <parameter key="compute_p-values" value="false"/>
-            <parameter key="remove_collinear_columns" value="false"/>
-            <parameter key="missing_values_handling" value="MeanImputation"/>
-            <parameter key="max_iterations" value="0"/>
-            <parameter key="specify_beta_constraints" value="false"/>
-            <list key="beta_constraints"/>
-            <parameter key="max_runtime_seconds" value="0"/>
-            <list key="expert_parameters"/>
+          <operator activated="true" class="operator_toolbox:smote" compatibility="3.0.000" expanded="true" height="82" name="SMOTE Upsampling" width="90" x="179" y="85">
+            <parameter key="number_of_neighbours" value="5"/>
+            <parameter key="normalize" value="true"/>
+            <parameter key="equalize_classes" value="true"/>
+            <parameter key="upsampling_size" value="1000"/>
+            <parameter key="auto_detect_minority_class" value="true"/>
+            <parameter key="round_integers" value="true"/>
+            <parameter key="nominal_change_rate" value="0.5"/>
+            <parameter key="append_to_original" value="true"/>
+            <parameter key="use_local_random_seed" value="false"/>
+            <parameter key="local_random_seed" value="1992"/>
           </operator>
-          <connect from_port="training set" to_op="Generalized Linear Model" to_port="training set"/>
-          <connect from_op="Generalized Linear Model" from_port="model" to_port="model"/>
+          <operator activated="true" class="concurrency:parallel_decision_tree" compatibility="12.0.005" expanded="true" height="103" name="Decision Tree" width="90" x="313" y="85">
+            <parameter key="criterion" value="gain_ratio"/>
+            <parameter key="maximal_depth" value="10"/>
+            <parameter key="apply_pruning" value="true"/>
+            <parameter key="confidence" value="0.1"/>
+            <parameter key="apply_prepruning" value="true"/>
+            <parameter key="minimal_gain" value="0.01"/>
+            <parameter key="minimal_leaf_size" value="2"/>
+            <parameter key="minimal_size_for_split" value="4"/>
+            <parameter key="number_of_prepruning_alternatives" value="3"/>
+          </operator>
+          <connect from_port="training set" to_op="SMOTE Upsampling" to_port="exa"/>
+          <connect from_op="SMOTE Upsampling" from_port="ups" to_op="Decision Tree" to_port="training set"/>
+          <connect from_op="Decision Tree" from_port="model" to_port="model"/>
           <portSpacing port="source_training set" spacing="0"/>
           <portSpacing port="sink_model" spacing="0"/>
           <portSpacing port="sink_through 1" spacing="0"/>
@@ -72,7 +71,7 @@
           <operator activated="true" class="apply_model" compatibility="12.0.005" expanded="true" height="82" name="Apply Model" width="90" x="45" y="85">
             <list key="application_parameters"/>
           </operator>
-          <operator activated="true" class="performance_binominal_classification" compatibility="12.0.005" expanded="true" height="82" name="Performance" width="90" x="179" y="187">
+          <operator activated="true" class="performance_binominal_classification" compatibility="12.0.005" expanded="true" height="82" name="Performance" width="90" x="179" y="34">
             <parameter key="manually_set_positive_class" value="false"/>
             <parameter key="main_criterion" value="first"/>
             <parameter key="accuracy" value="true"/>

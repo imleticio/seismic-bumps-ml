@@ -1,0 +1,19 @@
+\babel@toc {spanish}{}\relax 
+\contentsline {section}{\numberline {1}Introducción}{3}{section.1}%
+\contentsline {section}{\numberline {2}Problema, pregunta y objetivos}{3}{section.2}%
+\contentsline {section}{\numberline {3}Descripción del conjunto de datos}{4}{section.3}%
+\contentsline {subsection}{\numberline {3.1}Atributos predictivos documentados en el ARFF}{5}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.2}Preparación de datos}{6}{subsection.3.2}%
+\contentsline {section}{\numberline {4}Metodología de evaluación}{7}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Algoritmos y parámetros documentados}{7}{subsection.4.1}%
+\contentsline {section}{\numberline {5}Resultados de los modelos base}{8}{section.5}%
+\contentsline {subsection}{\numberline {5.1}Árbol de decisión}{8}{subsection.5.1}%
+\contentsline {subsection}{\numberline {5.2}Naive Bayes}{8}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}k-NN}{9}{subsection.5.3}%
+\contentsline {subsection}{\numberline {5.4}Regresión logística base}{9}{subsection.5.4}%
+\contentsline {section}{\numberline {6}Experimento complementario con SMOTE}{10}{section.6}%
+\contentsline {section}{\numberline {7}Gráficos no incorporados: ROC y error por cantidad de atributos}{11}{section.7}%
+\contentsline {section}{\numberline {8}Selección final del modelo}{12}{section.8}%
+\contentsline {section}{\numberline {9}Discusión}{12}{section.9}%
+\contentsline {section}{\numberline {10}Conclusiones}{13}{section.10}%
+\contentsline {section}{\numberline {11}Referencias}{13}{section.11}%

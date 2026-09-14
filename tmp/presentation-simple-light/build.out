@@ -1,0 +1,7 @@
+Inspect result written to file: /Users/leonel/Desktop/TAD/video/Presentacion_exposicion_proyecto_integrador_simple_light.pptx.inspect.ndjson
+{
+  "output": "/Users/leonel/Desktop/TAD/video/Presentacion_exposicion_proyecto_integrador_simple_light.pptx",
+  "slides": 13,
+  "renderDir": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/final-render",
+  "layoutDir": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/final-layout"
+}

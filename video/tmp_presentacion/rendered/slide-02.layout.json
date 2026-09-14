@@ -1,0 +1,880 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/pc19q9",
+    "id": "pc19q9",
+    "slide": 2,
+    "layoutId": "ad52a91e-abcb-4153-9f8a-dedbcc802156",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "b16fbe46-3586-43cd-a879-0f2fb046b200",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "ad52a91e-abcb-4153-9f8a-dedbcc802156",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "b16fbe46-3586-43cd-a879-0f2fb046b200",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "b16fbe46-3586-43cd-a879-0f2fb046b200",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/l8rq9kny",
+      "id": "1",
+      "bbox": [
+        72,
+        48,
+        8,
+        54
+      ],
+      "geometry": "rect",
+      "fillColor": "#1E6FB9",
+      "lineColor": "#1E6FB9",
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/y50ry547",
+      "id": "2",
+      "bbox": [
+        96,
+        43,
+        1065,
+        58
+      ],
+      "geometry": "rect",
+      "text": "El desafío fue detectar una clase peligrosa muy minoritaria",
+      "textPreview": "El desafío fue detectar una clase peligrosa muy minoritaria",
+      "resolvedFontSize": 36,
+      "resolvedTextStyle": {
+        "fontSize": 36,
+        "typeface": "+mn-lt",
+        "color": "#12345B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "El desafío fue detectar una clase peligrosa muy minoritaria"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "El desafío fue detectar una clase peligrosa muy minoritaria",
+          "resolvedTextStyle": {
+            "fontSize": 36,
+            "color": "#12345B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "El desafío fue detectar una clase peligrosa muy minoritaria",
+              "fontSize": 36,
+              "color": "#12345B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/j6987a5s",
+      "id": "3",
+      "bbox": [
+        72,
+        684,
+        1136,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#D9E1E8",
+      "lineColor": "#D9E1E8",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8bi94fm9",
+      "id": "4",
+      "bbox": [
+        72,
+        692,
+        560,
+        20
+      ],
+      "geometry": "rect",
+      "text": "UCASAL | Técnicas avanzadas de análisis de datos",
+      "textPreview": "UCASAL | Técnicas avanzadas de análisis de datos",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#5E6B78",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "UCASAL | Técnicas avanzadas de análisis de datos"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "UCASAL | Técnicas avanzadas de análisis de datos",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#5E6B78",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "UCASAL | Técnicas avanzadas de análisis de datos",
+              "fontSize": 12,
+              "color": "#5E6B78",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/tcrqdknu",
+      "id": "5",
+      "bbox": [
+        1172,
+        692,
+        36,
+        20
+      ],
+      "geometry": "rect",
+      "text": "2",
+      "textPreview": "2",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#5E6B78",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "2"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "2",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#5E6B78",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "2",
+              "fontSize": 12,
+              "color": "#5E6B78",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/690r2p4j",
+      "id": "6",
+      "bbox": [
+        92,
+        152,
+        360,
+        100
+      ],
+      "geometry": "rect",
+      "text": "6,58%",
+      "textPreview": "6,58%",
+      "resolvedFontSize": 72,
+      "resolvedTextStyle": {
+        "fontSize": 72,
+        "typeface": "+mn-lt",
+        "color": "#1E6FB9",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "6,58%"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "6,58%",
+          "resolvedTextStyle": {
+            "fontSize": 72,
+            "color": "#1E6FB9",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "6,58%",
+              "fontSize": 72,
+              "color": "#1E6FB9",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7a98bu54",
+      "id": "7",
+      "bbox": [
+        96,
+        258,
+        420,
+        78
+      ],
+      "geometry": "rect",
+      "text": "de los registros corresponden a eventos peligrosos",
+      "textPreview": "de los registros corresponden a eventos peligrosos",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "fontSize": 26,
+        "typeface": "+mn-lt",
+        "color": "#24313D",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "de los registros corresponden a"
+          },
+          {
+            "index": 2,
+            "text": "eventos peligrosos"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "de los registros corresponden a eventos peligrosos",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "color": "#24313D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "de los registros corresponden a eventos peligrosos",
+              "fontSize": 26,
+              "color": "#24313D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ofypsvm5",
+      "id": "8",
+      "bbox": [
+        94,
+        352,
+        330,
+        4
+      ],
+      "geometry": "rect",
+      "fillColor": "#D99A21",
+      "lineColor": "#D99A21",
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9g7q10nq",
+      "id": "9",
+      "bbox": [
+        94,
+        390,
+        330,
+        34
+      ],
+      "geometry": "rect",
+      "text": "Pregunta central",
+      "textPreview": "Pregunta central",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#12345B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Pregunta central"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Pregunta central",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#12345B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Pregunta central",
+              "fontSize": 22,
+              "color": "#12345B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xozihoni",
+      "id": "10",
+      "bbox": [
+        94,
+        432,
+        430,
+        112
+      ],
+      "geometry": "rect",
+      "text": "¿Qué modelo reduce mejor las omisiones de la clase 1 bajo una evaluación común?",
+      "textPreview": "¿Qué modelo reduce mejor las omisiones de la clase 1 bajo una evaluación común?",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#24313D",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "¿Qué modelo reduce mejor las"
+          },
+          {
+            "index": 2,
+            "text": "omisiones de la clase 1 bajo una"
+          },
+          {
+            "index": 3,
+            "text": "evaluación común?"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "¿Qué modelo reduce mejor las omisiones de la clase 1 bajo una evaluación común?",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#24313D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "¿Qué modelo reduce mejor las omisiones de la clase 1 bajo una evaluación común?",
+              "fontSize": 25,
+              "color": "#24313D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cnqhoj6d",
+      "id": "11",
+      "bbox": [
+        624,
+        146,
+        520,
+        416
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F4F7FA",
+      "lineColor": "#D9E1E8",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/bmh0fy5s",
+      "id": "12",
+      "bbox": [
+        664,
+        178,
+        430,
+        40
+      ],
+      "geometry": "rect",
+      "text": "Objetivo del proyecto",
+      "textPreview": "Objetivo del proyecto",
+      "resolvedFontSize": 28,
+      "resolvedTextStyle": {
+        "fontSize": 28,
+        "typeface": "+mn-lt",
+        "color": "#12345B",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Objetivo del proyecto"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Objetivo del proyecto",
+          "resolvedTextStyle": {
+            "fontSize": 28,
+            "color": "#12345B",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Objetivo del proyecto",
+              "fontSize": 28,
+              "color": "#12345B",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/al8zmto7",
+      "id": "13",
+      "bbox": [
+        664,
+        256,
+        8,
+        8
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#1E6FB9",
+      "lineColor": "#1E6FB9",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/lsjil8nu",
+      "id": "14",
+      "bbox": [
+        688,
+        244,
+        396,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Comparar cuatro algoritmos de clasificación supervisada.",
+      "textPreview": "Comparar cuatro algoritmos de clasificación supervisada.",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#24313D",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Comparar cuatro algoritmos de"
+          },
+          {
+            "index": 2,
+            "text": "clasificación supervisada."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Comparar cuatro algoritmos de clasificación supervisada.",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#24313D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Comparar cuatro algoritmos de clasificación supervisada.",
+              "fontSize": 22,
+              "color": "#24313D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/krahs3m9",
+      "id": "15",
+      "bbox": [
+        664,
+        336,
+        8,
+        8
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#1E6FB9",
+      "lineColor": "#1E6FB9",
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/zq10jy5o",
+      "id": "16",
+      "bbox": [
+        688,
+        324,
+        396,
+        78
+      ],
+      "geometry": "rect",
+      "text": "Evaluar accuracy, AUC, precisión, recall, F1 y matrices de confusión.",
+      "textPreview": "Evaluar accuracy, AUC, precisión, recall, F1 y matrices de confusión.",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#24313D",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Evaluar accuracy, AUC, precisión,"
+          },
+          {
+            "index": 2,
+            "text": "recall, F1 y matrices de confusión."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Evaluar accuracy, AUC, precisión, recall, F1 y matrices de confusión.",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#24313D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Evaluar accuracy, AUC, precisión, recall, F1 y matrices de confusión.",
+              "fontSize": 22,
+              "color": "#24313D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/yp8zqt43",
+      "id": "17",
+      "bbox": [
+        664,
+        438,
+        8,
+        8
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#1E6FB9",
+      "lineColor": "#1E6FB9",
+      "lineWidth": 0
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9gjip8nq",
+      "id": "18",
+      "bbox": [
+        688,
+        426,
+        396,
+        58
+      ],
+      "geometry": "rect",
+      "text": "Analizar SMOTE sin modificar el conjunto de prueba.",
+      "textPreview": "Analizar SMOTE sin modificar el conjunto de prueba.",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "fontSize": 22,
+        "typeface": "+mn-lt",
+        "color": "#24313D",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Analizar SMOTE sin modificar el"
+          },
+          {
+            "index": 2,
+            "text": "conjunto de prueba."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Analizar SMOTE sin modificar el conjunto de prueba.",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "color": "#24313D",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Analizar SMOTE sin modificar el conjunto de prueba.",
+              "fontSize": 22,
+              "color": "#24313D",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

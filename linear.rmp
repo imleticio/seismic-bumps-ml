@@ -37,7 +37,19 @@
         <parameter key="local_random_seed" value="1992"/>
         <parameter key="enable_parallel_execution" value="true"/>
         <process expanded="true">
-          <operator activated="true" class="h2o:generalized_linear_model" compatibility="11.0.002" expanded="true" height="124" name="Generalized Linear Model" width="90" x="179" y="85">
+          <operator activated="true" class="operator_toolbox:smote" compatibility="3.0.000" expanded="true" height="82" name="SMOTE Upsampling" width="90" x="45" y="187">
+            <parameter key="number_of_neighbours" value="5"/>
+            <parameter key="normalize" value="true"/>
+            <parameter key="equalize_classes" value="true"/>
+            <parameter key="upsampling_size" value="1000"/>
+            <parameter key="auto_detect_minority_class" value="true"/>
+            <parameter key="round_integers" value="true"/>
+            <parameter key="nominal_change_rate" value="0.5"/>
+            <parameter key="append_to_original" value="true"/>
+            <parameter key="use_local_random_seed" value="false"/>
+            <parameter key="local_random_seed" value="1992"/>
+          </operator>
+          <operator activated="true" class="h2o:generalized_linear_model" compatibility="11.0.002" expanded="true" height="124" name="Generalized Linear Model" width="90" x="246" y="85">
             <parameter key="family" value="binomial"/>
             <parameter key="link" value="family_default"/>
             <parameter key="solver" value="AUTO"/>
@@ -62,7 +74,8 @@
             <parameter key="max_runtime_seconds" value="0"/>
             <list key="expert_parameters"/>
           </operator>
-          <connect from_port="training set" to_op="Generalized Linear Model" to_port="training set"/>
+          <connect from_port="training set" to_op="SMOTE Upsampling" to_port="exa"/>
+          <connect from_op="SMOTE Upsampling" from_port="ups" to_op="Generalized Linear Model" to_port="training set"/>
           <connect from_op="Generalized Linear Model" from_port="model" to_port="model"/>
           <portSpacing port="source_training set" spacing="0"/>
           <portSpacing port="sink_model" spacing="0"/>

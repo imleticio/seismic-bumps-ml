@@ -1,0 +1,155 @@
+{
+  "sourcePptx": "/Users/leonel/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.0/skills/artifact-template-simple-light-mode/assets/reference.pptx",
+  "mapPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-frame-map.json",
+  "output": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter.pptx",
+  "outputBytes": 1404997,
+  "sourceSlideCount": 26,
+  "slideCount": 13,
+  "previewDir": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview",
+  "layoutDir": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "Portada del proyecto",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 3,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-01.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-01.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-01.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-01.layout.json"
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 4,
+      "narrativeRole": "Problema, riesgo y pregunta de investigación",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 5,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-02.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-02.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-02.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-02.layout.json"
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 4,
+      "narrativeRole": "Objetivo general",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 5,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-03.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-03.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-03.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-03.layout.json"
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 16,
+      "narrativeRole": "Ocho objetivos específicos",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 11,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-04.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-04.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-04.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-04.layout.json"
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 8,
+      "narrativeRole": "Conjunto de datos y desbalance",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 5,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-05.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-05.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-05.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-05.layout.json"
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 8,
+      "narrativeRole": "Protocolo común de evaluación",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 5,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-06.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-06.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-06.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-06.layout.json"
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 8,
+      "narrativeRole": "Preparación de datos y SMOTE",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 5,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-07.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-07.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-07.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-07.layout.json"
+    },
+    {
+      "outputSlide": 8,
+      "sourceSlide": 22,
+      "narrativeRole": "Resultados de modelos base",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 9,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-08.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-08.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-08.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-08.layout.json"
+    },
+    {
+      "outputSlide": 9,
+      "sourceSlide": 20,
+      "narrativeRole": "Resultados de variantes con SMOTE",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 7,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-09.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-09.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-09.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-09.layout.json"
+    },
+    {
+      "outputSlide": 10,
+      "sourceSlide": 8,
+      "narrativeRole": "Evidencia ROC antes de la selección",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 5,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-10.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-10.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-10.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-10.layout.json"
+    },
+    {
+      "outputSlide": 11,
+      "sourceSlide": 12,
+      "narrativeRole": "Modelo seleccionado y matriz de confusión",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 8,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-11.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-11.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-11.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-11.layout.json"
+    },
+    {
+      "outputSlide": 12,
+      "sourceSlide": 8,
+      "narrativeRole": "Sensibilidad complementaria a la cantidad de atributos",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 5,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-12.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-12.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-12.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-12.layout.json"
+    },
+    {
+      "outputSlide": 13,
+      "sourceSlide": 15,
+      "narrativeRole": "Conclusiones, limitaciones y próximos pasos",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 12,
+      "previewPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-preview/starter-slide-13.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-13.png",
+      "layoutPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout/starter-slide-13.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-13.layout.json"
+    }
+  ]
+}

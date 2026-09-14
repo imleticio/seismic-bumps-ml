@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "checkedAt": "2026-07-27T21:19:37.126Z",
+  "workspace": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light",
+  "finalPptx": "/Users/leonel/Desktop/TAD/video/Presentacion_exposicion_proyecto_integrador_simple_light.pptx",
+  "starterPptx": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter.pptx",
+  "mapPath": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-frame-map.json",
+  "starterLayoutDir": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter-layout",
+  "finalLayoutDir": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/final-layout",
+  "editDir": "/Users/leonel/Desktop/TAD/tmp/presentation-simple-light",
+  "issueCount": 0,
+  "issues": []
+}

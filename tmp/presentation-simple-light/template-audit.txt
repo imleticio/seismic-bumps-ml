@@ -1,0 +1,5 @@
+Template: Simple Light Mode retained reference, 26 slides, 1280x720, Helvetica Neue, white canvas, black typography, light-gray support surfaces.
+Reusable structures selected: cover 1; editorial two-column 4; half-text/half-image 8; 2x2 evidence grid 12; four-topic conclusion 15; eight-topic objectives 16; chart+three notes 20; column chart+two stats 22.
+Inherited footer placeholders are explicitly deleted; inherited page-number shapes are rewritten. All selected sample content is rewritten or replaced, never covered by overlays.
+Chart blues are intentionally recolored to rust/orange and warm gray; this is the user's requested deviation.
+Images reused from the source presentation are the dataset distribution, evaluation process screenshots, ROC composition and sensitivity chart.

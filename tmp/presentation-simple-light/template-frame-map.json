@@ -1,0 +1,607 @@
+{
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "Portada del proyecto",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/7qp4be9c",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Portada del proyecto"
+        },
+        {
+          "shapeId": "sh/65g3298r",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Portada del proyecto"
+        },
+        {
+          "shapeId": "sh/ts7md4r2",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Portada del proyecto"
+        }
+      ]
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 4,
+      "narrativeRole": "Problema, riesgo y pregunta de investigación",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/fapwfyds",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Problema, riesgo y pregunta de investigación"
+        },
+        {
+          "shapeId": "sh/doj29oba",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Problema, riesgo y pregunta de investigación"
+        },
+        {
+          "shapeId": "sh/p0rel8vu",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Problema, riesgo y pregunta de investigación"
+        },
+        {
+          "shapeId": "sh/ozydc3u9",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Problema, riesgo y pregunta de investigación"
+        },
+        {
+          "shapeId": "sh/1cj2d8b6",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Problema, riesgo y pregunta de investigación"
+        }
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 4,
+      "narrativeRole": "Objetivo general",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/fapwfyds",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Objetivo general"
+        },
+        {
+          "shapeId": "sh/doj29oba",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Objetivo general"
+        },
+        {
+          "shapeId": "sh/p0rel8vu",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Objetivo general"
+        },
+        {
+          "shapeId": "sh/ozydc3u9",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Objetivo general"
+        },
+        {
+          "shapeId": "sh/1cj2d8b6",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Objetivo general"
+        }
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 16,
+      "narrativeRole": "Ocho objetivos específicos",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/lwbyxwra",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Ocho objetivos específicos"
+        },
+        {
+          "shapeId": "sh/ytkf2h8j",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Ocho objetivos específicos"
+        },
+        {
+          "shapeId": "sh/e1sf65o3",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Ocho objetivos específicos"
+        },
+        {
+          "shapeId": "sh/8z2h8bq1",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Ocho objetivos específicos"
+        },
+        {
+          "shapeId": "sh/9kby1g7m",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Ocho objetivos específicos"
+        },
+        {
+          "shapeId": "sh/zutgvm94",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Ocho objetivos específicos"
+        },
+        {
+          "shapeId": "sh/kv2h4rqp",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Ocho objetivos específicos"
+        },
+        {
+          "shapeId": "sh/ih0jedob",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Ocho objetivos específicos"
+        },
+        {
+          "shapeId": "sh/ji9k7ypw",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Ocho objetivos específicos"
+        },
+        {
+          "shapeId": "sh/tcbmdcre",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Ocho objetivos específicos"
+        },
+        {
+          "shapeId": "sh/sb2l47at",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Ocho objetivos específicos"
+        }
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 8,
+      "narrativeRole": "Conjunto de datos y desbalance",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/6h0fypgb",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Conjunto de datos y desbalance"
+        },
+        {
+          "shapeId": "sh/983ap0ru",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conjunto de datos y desbalance"
+        },
+        {
+          "shapeId": "sh/87atgfq9",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conjunto de datos y desbalance"
+        },
+        {
+          "shapeId": "im/al8byhgr",
+          "action": "replace",
+          "reason": "Adapt inherited image for Conjunto de datos y desbalance"
+        },
+        {
+          "shapeId": "sh/je9g3ahk",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conjunto de datos y desbalance"
+        }
+      ]
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 8,
+      "narrativeRole": "Protocolo común de evaluación",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/6h0fypgb",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Protocolo común de evaluación"
+        },
+        {
+          "shapeId": "sh/983ap0ru",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Protocolo común de evaluación"
+        },
+        {
+          "shapeId": "sh/87atgfq9",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Protocolo común de evaluación"
+        },
+        {
+          "shapeId": "im/al8byhgr",
+          "action": "replace",
+          "reason": "Adapt inherited image for Protocolo común de evaluación"
+        },
+        {
+          "shapeId": "sh/je9g3ahk",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Protocolo común de evaluación"
+        }
+      ]
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 8,
+      "narrativeRole": "Preparación de datos y SMOTE",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/6h0fypgb",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Preparación de datos y SMOTE"
+        },
+        {
+          "shapeId": "sh/983ap0ru",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Preparación de datos y SMOTE"
+        },
+        {
+          "shapeId": "sh/87atgfq9",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Preparación de datos y SMOTE"
+        },
+        {
+          "shapeId": "im/al8byhgr",
+          "action": "replace",
+          "reason": "Adapt inherited image for Preparación de datos y SMOTE"
+        },
+        {
+          "shapeId": "sh/je9g3ahk",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Preparación de datos y SMOTE"
+        }
+      ]
+    },
+    {
+      "outputSlide": 8,
+      "sourceSlide": 22,
+      "narrativeRole": "Resultados de modelos base",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/p4z6tcri",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Resultados de modelos base"
+        },
+        {
+          "shapeId": "sh/k7qpgjul",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de modelos base"
+        },
+        {
+          "shapeId": "sh/436507qx",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de modelos base"
+        },
+        {
+          "shapeId": "sh/nm903u5k",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de modelos base"
+        },
+        {
+          "shapeId": "sh/ml0jap4f",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de modelos base"
+        },
+        {
+          "shapeId": "sh/7qhkzytw",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de modelos base"
+        },
+        {
+          "shapeId": "sh/8rql83uh",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de modelos base"
+        },
+        {
+          "shapeId": "sh/il87etcv",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de modelos base"
+        },
+        {
+          "shapeId": "ch/lsf6p4ji",
+          "action": "rewrite",
+          "reason": "Adapt inherited chart for Resultados de modelos base"
+        }
+      ]
+    },
+    {
+      "outputSlide": 9,
+      "sourceSlide": 20,
+      "narrativeRole": "Resultados de variantes con SMOTE",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/po3itc72",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Resultados de variantes con SMOTE"
+        },
+        {
+          "shapeId": "sh/m50rup4j",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de variantes con SMOTE"
+        },
+        {
+          "shapeId": "sh/n698nul4",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de variantes con SMOTE"
+        },
+        {
+          "shapeId": "sh/gjuhg7ql",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de variantes con SMOTE"
+        },
+        {
+          "shapeId": "sh/dkfmp4zy",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de variantes con SMOTE"
+        },
+        {
+          "shapeId": "sh/rq50vmp8",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Resultados de variantes con SMOTE"
+        },
+        {
+          "shapeId": "ch/k3el0fah",
+          "action": "rewrite",
+          "reason": "Adapt inherited chart for Resultados de variantes con SMOTE"
+        }
+      ]
+    },
+    {
+      "outputSlide": 10,
+      "sourceSlide": 8,
+      "narrativeRole": "Evidencia ROC antes de la selección",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/6h0fypgb",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Evidencia ROC antes de la selección"
+        },
+        {
+          "shapeId": "sh/983ap0ru",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Evidencia ROC antes de la selección"
+        },
+        {
+          "shapeId": "sh/87atgfq9",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Evidencia ROC antes de la selección"
+        },
+        {
+          "shapeId": "im/al8byhgr",
+          "action": "replace",
+          "reason": "Adapt inherited image for Evidencia ROC antes de la selección"
+        },
+        {
+          "shapeId": "sh/je9g3ahk",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Evidencia ROC antes de la selección"
+        }
+      ]
+    },
+    {
+      "outputSlide": 11,
+      "sourceSlide": 12,
+      "narrativeRole": "Modelo seleccionado y matriz de confusión",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/xw3q94ne",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Modelo seleccionado y matriz de confusión"
+        },
+        {
+          "shapeId": "sh/5oz2t4jm",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Modelo seleccionado y matriz de confusión"
+        },
+        {
+          "shapeId": "sh/4n6lkz21",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Modelo seleccionado y matriz de confusión"
+        },
+        {
+          "shapeId": "sh/b6d4f2lc",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Modelo seleccionado y matriz de confusión"
+        },
+        {
+          "shapeId": "sh/wvupgz6t",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Modelo seleccionado y matriz de confusión"
+        },
+        {
+          "shapeId": "sh/0f2lgnmp",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Modelo seleccionado y matriz de confusión"
+        },
+        {
+          "shapeId": "sh/q903ad4n",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Modelo seleccionado y matriz de confusión"
+        },
+        {
+          "shapeId": "sh/dcbm583y",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Modelo seleccionado y matriz de confusión"
+        }
+      ]
+    },
+    {
+      "outputSlide": 12,
+      "sourceSlide": 8,
+      "narrativeRole": "Sensibilidad complementaria a la cantidad de atributos",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/6h0fypgb",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Sensibilidad complementaria a la cantidad de atributos"
+        },
+        {
+          "shapeId": "sh/983ap0ru",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Sensibilidad complementaria a la cantidad de atributos"
+        },
+        {
+          "shapeId": "sh/87atgfq9",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Sensibilidad complementaria a la cantidad de atributos"
+        },
+        {
+          "shapeId": "im/al8byhgr",
+          "action": "replace",
+          "reason": "Adapt inherited image for Sensibilidad complementaria a la cantidad de atributos"
+        },
+        {
+          "shapeId": "sh/je9g3ahk",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Sensibilidad complementaria a la cantidad de atributos"
+        }
+      ]
+    },
+    {
+      "outputSlide": 13,
+      "sourceSlide": 15,
+      "narrativeRole": "Conclusiones, limitaciones y próximos pasos",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        {
+          "shapeId": "sh/547mhg3m",
+          "action": "delete",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        },
+        {
+          "shapeId": "sh/x0rqpsje",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        },
+        {
+          "shapeId": "sh/wzipwn2t",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        },
+        {
+          "shapeId": "sh/upkrilwj",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        },
+        {
+          "shapeId": "sh/5wvax0f6",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        },
+        {
+          "shapeId": "sh/it4rm5wv",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        },
+        {
+          "shapeId": "sh/judsvqxg",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        },
+        {
+          "shapeId": "sh/0z29cbyh",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        },
+        {
+          "shapeId": "sh/l0bqlgf2",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        },
+        {
+          "shapeId": "sh/1kjyt83e",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        },
+        {
+          "shapeId": "sh/gjax03m9",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        },
+        {
+          "shapeId": "sh/k3y5ov21",
+          "action": "rewrite",
+          "reason": "Adapt inherited shape for Conclusiones, limitaciones y próximos pasos"
+        }
+      ]
+    }
+  ],
+  "omittedSourceSlides": [
+    {
+      "sourceSlide": 2,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 3,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 5,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 6,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 7,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 9,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 10,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 11,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 13,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 14,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 17,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 18,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 19,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 21,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 23,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 24,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 25,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    },
+    {
+      "sourceSlide": 26,
+      "reason": "Layout pattern not required by the 13-slide narrative."
+    }
+  ]
+}

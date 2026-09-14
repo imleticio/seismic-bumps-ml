@@ -1,0 +1,580 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/wqajau",
+    "id": "wqajau",
+    "slide": 9,
+    "layoutId": "ad52a91e-abcb-4153-9f8a-dedbcc802156",
+    "layoutName": "Title Slide",
+    "layoutType": "title",
+    "masterLayoutId": "b16fbe46-3586-43cd-a879-0f2fb046b200",
+    "masterLayoutName": "Master",
+    "backgroundColor": "#12345B",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1280,
+      "height": 720
+    }
+  },
+  "theme": {
+    "colorSchemeName": "ChatGPT",
+    "colors": {
+      "accent1": "#156082",
+      "accent2": "#E97132",
+      "accent3": "#196B24",
+      "accent4": "#0F9ED5",
+      "accent5": "#A02B93",
+      "accent6": "#4EA72E",
+      "bg1": "#FFFFFF",
+      "bg2": "#000000",
+      "tx1": "#1F1F1F",
+      "tx2": "#FFFFFF",
+      "dk1": "#000000",
+      "lt1": "#FFFFFF",
+      "dk2": "#0E2841",
+      "lt2": "#E8E8E8",
+      "hlink": "#467886",
+      "folHlink": "#96607D"
+    },
+    "typefaces": [
+      "+mn-lt"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "ad52a91e-abcb-4153-9f8a-dedbcc802156",
+      "name": "Title Slide",
+      "type": "title",
+      "parentLayoutId": "b16fbe46-3586-43cd-a879-0f2fb046b200",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "b16fbe46-3586-43cd-a879-0f2fb046b200",
+      "name": "Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hsreh43m",
+      "id": "1",
+      "bbox": [
+        78,
+        56,
+        640,
+        62
+      ],
+      "geometry": "rect",
+      "text": "Conclusiones",
+      "textPreview": "Conclusiones",
+      "resolvedFontSize": 44,
+      "resolvedTextStyle": {
+        "fontSize": 44,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Conclusiones"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Conclusiones",
+          "resolvedTextStyle": {
+            "fontSize": 44,
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Conclusiones",
+              "fontSize": 44,
+              "color": "#FFFFFF",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upgf6p4v",
+      "id": "2",
+      "bbox": [
+        78,
+        128,
+        180,
+        6
+      ],
+      "geometry": "rect",
+      "fillColor": "#D99A21",
+      "lineColor": "#D99A21",
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vqpwfu5g",
+      "id": "3",
+      "bbox": [
+        98,
+        196,
+        8,
+        8
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#D99A21",
+      "lineColor": "#D99A21",
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4vixczmx",
+      "id": "4",
+      "bbox": [
+        122,
+        184,
+        1036,
+        64
+      ],
+      "geometry": "rect",
+      "text": "La accuracy no describió adecuadamente el rendimiento sobre la clase peligrosa.",
+      "textPreview": "La accuracy no describió adecuadamente el rendimiento sobre la clase peligrosa.",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "La accuracy no describió adecuadamente el rendimiento sobre la clase peligrosa."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "La accuracy no describió adecuadamente el rendimiento sobre la clase peligrosa.",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#FFFFFF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "La accuracy no describió adecuadamente el rendimiento sobre la clase peligrosa.",
+              "fontSize": 25,
+              "color": "#FFFFFF",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5wrel43i",
+      "id": "5",
+      "bbox": [
+        98,
+        288,
+        8,
+        8
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#D99A21",
+      "lineColor": "#D99A21",
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/it0fa947",
+      "id": "6",
+      "bbox": [
+        122,
+        276,
+        1036,
+        72
+      ],
+      "geometry": "rect",
+      "text": "SMOTE aumentó el recall de la clase 1, pero también incrementó las falsas alarmas.",
+      "textPreview": "SMOTE aumentó el recall de la clase 1, pero también incrementó las falsas alarmas.",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "SMOTE aumentó el recall de la clase 1, pero también incrementó las falsas alarmas."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "SMOTE aumentó el recall de la clase 1, pero también incrementó las falsas alarmas.",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#FFFFFF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "SMOTE aumentó el recall de la clase 1, pero también incrementó las falsas alarmas.",
+              "fontSize": 25,
+              "color": "#FFFFFF",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3u9wjulc",
+      "id": "7",
+      "bbox": [
+        98,
+        394,
+        8,
+        8
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#D99A21",
+      "lineColor": "#D99A21",
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sj2xgjm9",
+      "id": "8",
+      "bbox": [
+        122,
+        382,
+        1036,
+        72
+      ],
+      "geometry": "rect",
+      "text": "La regresión logística + SMOTE fue la configuración más coherente con el objetivo preventivo.",
+      "textPreview": "La regresión logística + SMOTE fue la configuración más coherente con el objetivo preventivo.",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "fontSize": 25,
+        "typeface": "+mn-lt",
+        "color": "#FFFFFF",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "La regresión logística + SMOTE fue la configuración más coherente con el objetivo"
+          },
+          {
+            "index": 2,
+            "text": "preventivo."
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "La regresión logística + SMOTE fue la configuración más coherente con el objetivo preventivo.",
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "color": "#FFFFFF",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "La regresión logística + SMOTE fue la configuración más coherente con el objetivo preventivo.",
+              "fontSize": 25,
+              "color": "#FFFFFF",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dkbypo3u",
+      "id": "9",
+      "bbox": [
+        80,
+        514,
+        1118,
+        1
+      ],
+      "geometry": "rect",
+      "fillColor": "#45617D",
+      "lineColor": "#45617D",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/5orepg7m",
+      "id": "10",
+      "bbox": [
+        94,
+        548,
+        250,
+        34
+      ],
+      "geometry": "rect",
+      "text": "Próximos pasos",
+      "textPreview": "Próximos pasos",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#D99A21",
+        "bold": true,
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Próximos pasos"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Próximos pasos",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#D99A21",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Próximos pasos",
+              "fontSize": 23,
+              "color": "#D99A21",
+              "bold": true,
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/43idgb6h",
+      "id": "11",
+      "bbox": [
+        94,
+        588,
+        1050,
+        42
+      ],
+      "geometry": "rect",
+      "text": "Calibrar umbrales  |  Analizar costos  |  Validar con datos temporales o externos",
+      "textPreview": "Calibrar umbrales  |  Analizar costos  |  Validar con datos temporales o externos",
+      "resolvedFontSize": 23,
+      "resolvedTextStyle": {
+        "fontSize": 23,
+        "typeface": "+mn-lt",
+        "color": "#DCECF8",
+        "alignment": "left",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Calibrar umbrales  |  Analizar costos  |  Validar con datos temporales o externos"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Calibrar umbrales  |  Analizar costos  |  Validar con datos temporales o externos",
+          "resolvedTextStyle": {
+            "fontSize": 23,
+            "color": "#DCECF8",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Calibrar umbrales  |  Analizar costos  |  Validar con datos temporales o externos",
+              "fontSize": 23,
+              "color": "#DCECF8",
+              "alignment": "left"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/329wn6pw",
+      "id": "12",
+      "bbox": [
+        1170,
+        674,
+        38,
+        20
+      ],
+      "geometry": "rect",
+      "text": "9",
+      "textPreview": "9",
+      "resolvedFontSize": 12,
+      "resolvedTextStyle": {
+        "fontSize": 12,
+        "typeface": "+mn-lt",
+        "color": "#DCECF8",
+        "alignment": "right",
+        "insets": {
+          "top": 4.8,
+          "right": 9.6,
+          "bottom": 4.8,
+          "left": 9.6
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "9"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "9",
+          "resolvedTextStyle": {
+            "fontSize": 12,
+            "color": "#DCECF8",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "9",
+              "fontSize": 12,
+              "color": "#DCECF8",
+              "alignment": "right"
+            }
+          ],
+          "marginLeft": 0
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

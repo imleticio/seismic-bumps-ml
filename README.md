@@ -58,9 +58,9 @@ Las variantes con SMOTE aumentaron el recall y redujeron falsos negativos, pero 
 
 - `*.rmp`: procesos experimentales de Altair AI Studio / RapidMiner.
 - `scripts/`: scripts utilizados para generar figuras y comparaciones.
-- `output/`: figuras y artefactos empleados en el informe.
+- `output/`: figuras y artefactos experimentales.
 - `seismic-bumps.arff`: dataset utilizado en los experimentos.
-- `Proyecto Integrador - Informe Final 2026 - MartinezMauricioLeonel.pdf`: informe del proyecto.
+- `Presentacion_exposicion_proyecto_integrador.key`: presentación final del proyecto.
 
 ## Autor
 

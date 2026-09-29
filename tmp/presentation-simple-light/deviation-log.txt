@@ -1,4 +1,0 @@
-Global: replace blue chart series with restrained rust/orange and warm gray to avoid blue dominance.
-Slides 5, 6, 7, 10, 12: replace inherited template image with verified real source evidence, preserving the inherited frame and using contain for wide figures.
-Slides 8-9: preserve inherited native chart geometry but replace all sample series, categories, labels and explanatory text with exact project data.
-Slides 11 and 13: retain inherited card/topic composition and replace all sample copy; no added card wall or decorative icons.

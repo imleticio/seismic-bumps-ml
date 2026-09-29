@@ -1,2 +1,0 @@
-import {FileBlob,PresentationFile} from '@oai/artifact-tool';const p=await PresentationFile.importPptx(await FileBlob.load('/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter.pptx'));const ch=p.slides.items[7].charts.items[0], s=ch.series.items[0];
-for(const [o,k] of [[ch,'barOptions'],[ch,'legend'],[ch,'yAxis'],[s,'fill'],[s,'line'],[s,'values'],[s,'categories'],[s,'name'],[s,'marker']]){console.log(k,Object.getOwnPropertyDescriptor(Object.getPrototypeOf(o),k));}

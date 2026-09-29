@@ -1,5 +1,0 @@
-import {FileBlob,PresentationFile} from '@oai/artifact-tool';
-const p=await PresentationFile.importPptx(await FileBlob.load('/Users/leonel/Desktop/TAD/tmp/presentation-simple-light/template-starter.pptx'));
-const sl=p.slides.items[1]; const x=sl.shapes.items.find(s=>s.name.includes('Footer')); console.log('slide',sl.constructor.name,Object.getOwnPropertyNames(Object.getPrototypeOf(sl))); console.log('shape',x.constructor.name,Object.getOwnPropertyNames(Object.getPrototypeOf(x)));
-const ch=p.slides.items[7].charts.items[0]; console.log('chart',ch.constructor.name,Object.getOwnPropertyNames(Object.getPrototypeOf(ch)), 'series count',ch.series.count); for(let i=0;i<ch.series.count;i++){const s=ch.series.getItemAt(i); console.log('series',i,s.constructor.name,Object.getOwnPropertyNames(Object.getPrototypeOf(s)),{name:s.name,values:s.values,categories:s.categories,fill:s.fill,line:s.line});}
-const im=p.slides.items[4].images.items[0]; console.log('image',im.constructor.name,Object.getOwnPropertyNames(Object.getPrototypeOf(im)),{fit:im.fit,frame:im.frame,crop:im.crop});

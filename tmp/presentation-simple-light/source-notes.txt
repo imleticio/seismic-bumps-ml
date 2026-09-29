@@ -1,4 +1,0 @@
-Primary factual source: /Users/leonel/Desktop/TAD/Proyecto Integrador - Informe Final 2026 - MartinezMauricioLeonel.pdf
-Narrative/order source: /Users/leonel/Desktop/TAD/video/Guion_video_proyecto_integrador.pdf
-Data/visual source: /Users/leonel/Desktop/TAD/video/Presentacion_exposicion_proyecto_integrador.pptx
-Template source: /Users/leonel/.codex/plugins/cache/openai-curated-remote/openai-templates/0.1.0/skills/artifact-template-simple-light-mode/assets/reference.pptx

@@ -1,0 +1,25 @@
+.DS_Store
+Thumbs.db
+
+# Temporary / generated files
+tmp/
+*.log
+*.aux
+*.out
+*.toc
+*.synctex.gz
+*.fdb_latexmk
+*.fls
+*.bak
+*.bak-*
+*.inspect.ndjson
+
+# Local editor files
+.vscode/
+.idea/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
